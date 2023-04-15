@@ -5,12 +5,14 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": " tsx watch src/server.ts"
+    "dev": " tsx watch src/server.ts",
+    "lint": "eslint src --ext .ts --fix"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.15.11",
+    "eslint": "^8.38.0",
     "tsx": "^3.12.6",
     "typescript": "^5.0.4"
   },
