@@ -4,7 +4,9 @@ import { transactionsRoutes } from './routes/transactions';
 
 const app = fastify();
 // Fastify will execute following the order of the routes
-app.register(transactionsRoutes);
+app.register(transactionsRoutes, {
+  prefix: '/transactions',
+});
 
 app
   .listen({
